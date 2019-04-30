@@ -1,0 +1,26 @@
+.center{
+
+	max-width: 500px;
+     margin: auto;
+     margin-top: 10%;
+
+	color: white;
+	font-size: 300%;
+    text-shadow:
+     1px 1px 0 #CCC,
+     2px 2px 0 #CCC,
+     3px 3px 0 #444,
+     4px 4px 0 #444,
+     5px 5px 0 #444,
+     6px 6px 0 #444;
+
+     border: solid 5px lightgreen;
+
+     padding: 50px;
+     padding-left: 150px;
+     padding-right: 150px;
+}
+
+.center:active{
+    border: dashed 5px lightgreen;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <link rel="icon" href="index/images/favicon.png" type="image/x-icon"/>
+    <title>Split | Welkom | Project Webontwikkeling</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <link rel="stylesheet" type="text/css" href="index/css/menu.css">
+    <link rel="stylesheet" type="text/css" href="index/css/geheim.css">
+    <link rel="stylesheet" type="text/css" href="index/css/menu-icon.css">
+    <link rel="stylesheet" type="text/css" href="index/css/main.css">
+    <link rel="stylesheet" type="text/css" href="index/css/draaiendefoto.css">
+    <link rel="stylesheet" type="text/css" href="index/css/tekstselectie.css">
+    <link rel="stylesheet" type="text/css" href="index/css/titelresponsive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+    <nav class="menu-activea">
+  <h1><div class="container" onclick="myFunction(this)"><div class="bar1"></div><div class="bar2"></div><div class="bar3"></div></div></h1>
+  <ul>
+    <li>HOME</li>
+    <a href="eerste pagina/html/eerstepagina.html"><li>LIGGING</li></a>
+    <a  href="tweede pagina/html/tweedepagina.html"><li>ACTIVITEITEN</li></a>
+    <a href="geheim/html/geheim.html"><li id="geheim"></li></a>
+  </ul>
+</nav>
+
+
+<main>
+
+  <div class="center">
+    <h1 id="titel" onclick="explicitepagina()">Split</h1>
+  </div>
+
+</main>
+
+
+<!-- Javascript -->
+
+<script type="text/javascript">
+
+  (function() {
+
+  var nav = $('nav'),
+    menu = $('nav h1'),
+    main = $('main'),
+    open = false,
+    hover = false;
+
+  menu.on('click', function() {
+        open = !open ? true : false;
+    nav.toggleClass('menu-active');
+    main.toggleClass('menu-active');
+    nav.removeClass('menu-hover');
+    main.removeClass('menu-hover');
+    console.log(open);
+  });
+  menu.hover( 
+    function() {
+      if (!open) {
+        nav.addClass('menu-hover');
+        main.addClass('menu-hover');
+      }
+    }, function() {
+      nav.removeClass('menu-hover');
+      main.removeClass('menu-hover');
+    }
+  );
+
+})();
+
+function myFunction(x) {
+  x.classList.toggle("change");
+}
+
+function explicitepagina(){
+  var vraag;
+  vraag = confirm("Ben je 18+? (Dit is namelijk een link naar een foto met explicitie content)");
+
+  if (vraag == true){
+    window.location.href = "index/images/geheim.jpg";
+  }
+}
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+#wrapper{
+	width: 500px;
+	background-color: white;
+	margin: auto;
+	margin-top: 20%;
+	padding: 30px;
+}
+
+.center div h1{
+	color: black;
+	font-size: 20px;
+}
+
+.center div p{
+	color: black;
+	font-size: 15px;
+}
+
+.center div img{
+	max-width: 250px;
+}

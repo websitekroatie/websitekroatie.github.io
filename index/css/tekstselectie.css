@@ -1,0 +1,14 @@
+::selection {
+background: darkgreen;
+color: lightgreen;
+}
+
+::-moz-selection {
+background: darkgreen;
+color: darkgreen;
+}
+
+::-webkit-selection {
+background: darkgreen;
+color: darkgreen;
+}
